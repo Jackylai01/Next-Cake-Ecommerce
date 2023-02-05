@@ -1,0 +1,51 @@
+.container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.item {
+  flex: 1;
+}
+
+.table {
+  max-width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.button:first-child {
+  margin-right: 10px;
+  background-color: teal;
+}
+
+.button:last-child {
+  background-color: crimson;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .table {
+    font-size: 0.8rem;
+  }
+  .button {
+    width: 80px;
+    height: 30px;
+  }
+}
